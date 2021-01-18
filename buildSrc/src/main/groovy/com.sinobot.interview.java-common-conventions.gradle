@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    // Use JCenter for resolving dependencies.
+    jcenter()
+}
+
+dependencies {
+    constraints {
+    }
+}
+
+tasks.named('test') {
+    // Use junit platform for unit tests.
+    useJUnitPlatform()
+}

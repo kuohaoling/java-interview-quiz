@@ -1,0 +1,7 @@
+**/.gradle/*
+.m2/*
+.idea/*
+build/
+out/
+
+!**/.keep

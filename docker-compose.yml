@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    image: openjdk:11-jdk
+    working_dir: /code
+    user: 1000:1000
+    volumes:
+      - .:/code
+      # gradle
+      - .gradle:/home/dev/.gradle
+      - .m2:/home/dev/.m2
