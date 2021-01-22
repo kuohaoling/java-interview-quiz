@@ -1,4 +1,4 @@
-package com.sinobot.interview.repo;
+package com.sinobot.interview.repository;
 
 import java.util.UUID;
 

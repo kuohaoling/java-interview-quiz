@@ -4,8 +4,8 @@ import java.util.List;
 
 import com.sinobot.interview.model.Product;
 import com.sinobot.interview.model.User;
-import com.sinobot.interview.repo.ProductRepository;
-import com.sinobot.interview.repo.UserRepository;
+import com.sinobot.interview.repository.ProductRepository;
+import com.sinobot.interview.repository.UserRepository;
 
 import org.springframework.stereotype.Service;
 

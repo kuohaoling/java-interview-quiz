@@ -1,4 +1,4 @@
-package com.sinobot.interview.responses;
+package com.sinobot.interview.response;
 
 import java.util.List;
 

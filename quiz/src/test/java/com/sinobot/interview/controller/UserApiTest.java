@@ -1,4 +1,4 @@
-package com.sinobot.interview.controllers;
+package com.sinobot.interview.controller;
 
 import com.google.gson.Gson;
 import com.sinobot.interview.config.CoreConfiguration;

@@ -16,6 +16,7 @@ dependencies {
 
     implementation 'com.google.code.gson:gson'
     implementation 'com.google.guava:guava:30.0-jre'
+    implementation 'mysql:mysql-connector-java'
     implementation 'org.apache.commons:commons-collections4:4.4'
     implementation 'org.apache.commons:commons-lang3'
 
@@ -25,11 +26,7 @@ dependencies {
     testImplementation 'com.h2database:h2'
 }
 
-configurations {
-    compile.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
-}
-
 application {
     // Define the main class for the application.
-    mainClass = 'com.sinobot.interview.app.App'
+    mainClass = 'com.sinobot.interview.app.Application'
 }

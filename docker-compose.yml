@@ -1,5 +1,12 @@
 version: '3'
 services:
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: quiz
+    volumes:
+      - ./db/mysql:/var/lib/mysql
   app:
     image: openjdk:11-jdk
     working_dir: /code
@@ -9,3 +16,5 @@ services:
       # gradle
       - .gradle:/home/dev/.gradle
       - .m2:/home/dev/.m2
+    links:
+      - mysql

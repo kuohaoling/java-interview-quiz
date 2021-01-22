@@ -7,11 +7,15 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EntityScan("com.sinobot.interview.model")
-@EnableJpaRepositories("com.sinobot.interview.repo")
-@ComponentScan("com.sinobot.interview.service")
+@EnableJpaRepositories("com.sinobot.interview.repository")
+@EnableWebMvc
+@ComponentScan({
+        "com.sinobot.interview.service",
+        "com.sinobot.interview.controller"})
 @Import({DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class CoreConfiguration {
 }
