@@ -1,7 +1,7 @@
 # Objective
 make sure
 ```shell
-docker-compose run --rm -ti app ./gradlew clean build
+./gradlew clean build
 ```
 pass without errors
 

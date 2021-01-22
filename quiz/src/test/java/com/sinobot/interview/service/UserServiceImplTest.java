@@ -24,14 +24,14 @@ class UserServiceImplTest {
     @Test
     void favoriteProductSuccess() {
         // given a user and a product
-        var user = new User();
+        User user = new User();
         Product product = new Product();
 
         // when a user favorites a product
         userService.favoriteProduct(user, product);
 
         // then a user favorites a product
-        var products = userService.findFavorites(user);
+        List<Product> products = userService.findFavorites(user);
         assertThat(products, hasItem(product));
     }
 

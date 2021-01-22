@@ -31,7 +31,7 @@ public class SimpleServiceTest {
 
     @Test
     public void lengthEncodeSuccess() {
-        var input = "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
+        String input = "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
         assertEquals("12W1B12W3B24W1B14W", service.lengthEncode(input));
     }
 

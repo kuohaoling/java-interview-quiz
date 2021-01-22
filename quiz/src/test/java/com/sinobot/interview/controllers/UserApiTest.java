@@ -30,8 +30,8 @@ class UserApiTest {
 
     @Test
     void favoriteProductSuccess() throws Exception {
-        var user = new User();
-        var product = new Product();
+        User user = new User();
+        Product product = new Product();
         mockMvc.perform(post("/users/{userId}/favoriteProduct", user.getId())
                 .content(gson.toJson(product)))
                 .andExpect(status().is2xxSuccessful())

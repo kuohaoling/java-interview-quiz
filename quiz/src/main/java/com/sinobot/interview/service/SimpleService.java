@@ -10,12 +10,12 @@ public class SimpleService {
     private static final int SMALL_BRICK_SIZE = 2;
 
     boolean canFillGap(int smallQuantity, int bigQuantity, int totalGap) {
-        var maxBigRequired = totalGap / BIG_BRICK_SIZE;
+        int maxBigRequired = totalGap / BIG_BRICK_SIZE;
         if (maxBigRequired > bigQuantity) {
             return false;
         }
 
-        var gapLeftMaxBigRequired = totalGap % BIG_BRICK_SIZE;
+        int gapLeftMaxBigRequired = totalGap % BIG_BRICK_SIZE;
         if (smallQuantity * SMALL_BRICK_SIZE < gapLeftMaxBigRequired) {
             return false;
         }
