@@ -1,7 +1,6 @@
 package com.sinobot.interview.service;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Component
 public class SimpleService {
